@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: #323232;
+            color: whitesmoke;
+        }
+
+    </style>
+    <title>Temperature converter</title>
+</head>
+<body>
+    <p id="Farenheit"></p>
+</body>
+<script>
+
+    function tempConverter(){
+
+        var number = Number(prompt("Podaj temperaturę w stopniach Celsjusza"));
+
+        var Farenheit = (number * 1.8) +32;
+        document.getElementById("Farenheit").innerHTML = "Podana temperatura w stopniach Farenheita to " + Math.round(Farenheit);
+    }
+
+    tempConverter();
+
+</script>
+</html>
