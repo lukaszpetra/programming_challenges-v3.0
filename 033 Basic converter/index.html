@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic converter</title>
+    <style>
+        body{
+            background-color: #323232;
+            color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <h3 id="dec"></h3>
+    <h3 id="bin"></h3>
+    <h3 id="oct"></h3>
+    <h3 id="hex"></h3>
+</body>
+<script>
+    function toBinary(){
+
+        var number = Number(prompt("Podaj liczbe: "));
+    
+        document.getElementById("dec").innerHTML =number + " w systemie dziesiętnym ma postać " + number;
+        document.getElementById("bin").innerHTML =number + " w systemie binarnym ma postać " + number.toString(2);
+        document.getElementById("oct").innerHTML =number + " w systemie ósemkowym ma postać " + number.toString(8);
+        document.getElementById("hex").innerHTML =number + " w systemie szesnastkowym ma postać " + number.toString(16);
+
+    }
+
+toBinary();
+</script>
+</html>
