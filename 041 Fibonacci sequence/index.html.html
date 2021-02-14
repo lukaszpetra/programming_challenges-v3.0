@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+    const step = Number(prompt("Podaj ilość elementów ciągu: "));
+
+    let el1 = 0, el2 = 1, next;
+
+    for(let i = 0; i<=step; i++){
+        console.log(el1);
+        next = el1 + el2;
+        el1 = el2;
+        el2= next;
+    }
+    
+</script>
+</html>
